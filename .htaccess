@@ -1,0 +1,4 @@
+  RewriteEngine on
+  Options -Indexes
+  RewriteCond $1 !^(index\.php|dist|css|js|bootstrap-dist|font-awesome|assets|fpdf|\robots\.txt|sitemap\.xml)
+  RewriteRule ^(.*)$ index.php/$1 [L] 
